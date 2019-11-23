@@ -8,5 +8,17 @@ public class PruebaPDM {
 		System.out.println("Hola mundo");
 
 	}
+	
+	public int metodo1() {
+		int x = 4 + 8;
+		int y = x;
+		return y;
+	}
+	
+	public int metodo2() {
+		int x = 4 + 8;
+		int y = x;
+		return y;
+	}
 
 }

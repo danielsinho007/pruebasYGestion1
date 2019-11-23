@@ -14,8 +14,31 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-pmd-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-pmd-plugin</artifactId>
+	    <version>3.6</version>
+	</dependency>
+    
   </dependencies>
   <build>
     <finalName>pruebas1</finalName>
   </build>
+  <reporting>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-pmd-plugin</artifactId>
+	            <version>3.6</version>
+	            <configuration>
+	                <linkXRef>false</linkXRef>
+	                <targetJdk>1.8</targetJdk>
+	                <rulesets>
+	                    <ruleset>/rulesets/basic.xml</ruleset>
+	                </rulesets>
+	            </configuration>
+	        </plugin>
+	    </plugins>
+	</reporting>
 </project>
